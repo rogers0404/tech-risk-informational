@@ -1,69 +1,37 @@
 # Technological Risk Framework — Announcement Page
 
-Open `index.html` in your browser to view the announcement site.
+Project README for announcement site.
 
-Serve locally (recommended):
+**Purpose of this announcement**
+- **Title:** Building a Technological Risk Framework for Energy Companies – Engineering First
+- **Summary:** Over the past weeks, a structured, engineering-focused framework has been developed to assess technological risk in energy companies. The model evaluates exposure across core domains (OT infrastructure & reliability, cyber-physical risk, obsolescence & vendor risk, system complexity & integration, monitoring & predictive capability, and governance & organizational risk) and produces a transparent, auditable Technological Risk Index.
+
+Open the site by opening `index.html` in a browser or serving the folder locally. For the live site, [Click here to visit](https://rogers0404.github.io/tech-risk-informational/).
+
+**Project file structure**
+- `index.html` — main single-page announcement markup (hero, carousel, about, contact, footer).
+- `styles.css` — styling, color variables, responsive layout, carousel styles, and `@font-face` rules for self-hosted fonts.
+- `script.js` — carousel behavior, keyboard support, and small UI helpers (year injection).
+- `images/` — image assets used by the carousel and page illustrations.
+- `fonts/` — (optional) place local WOFF2 font files here if self-hosting Inter.
+- `.gitignore` — ignores `node_modules`, build artifacts, and editor/OS files.
+
+How to preview locally:
 
 ```bash
-# from this folder
+# from the project root
 python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
-Start a local static server for preview:
+Self-host fonts (optional, recommended):
+1. Create a `fonts/` folder at project root.
+2. Add Inter WOFF2 files named like `Inter-Regular.woff2`, `Inter-Medium.woff2`, etc.
+3. `styles.css` already contains `@font-face` rules that reference `fonts/`.
 
-```bash
-# from this folder
-python3 -m http.server 8000
-# then open http://localhost:8000
-```
+Notes and next steps:
+- Images and fonts are local for reliability and privacy — add any missing files to `images/` and `fonts/`.
+- If you want, I can run ESLint or add the font files into the repo; tell me which to do next.
 
-Self-host Inter font files (recommended for privacy and offline reliability):
-
-1. Create a `fonts/` folder at the project root.
-2. Download Inter WOFF2 files (Regular, Medium, SemiBold, Bold) and place them in `fonts/` with names:
-	- `Inter-Regular.woff2`
-	- `Inter-Medium.woff2`
-	- `Inter-SemiBold.woff2`
-	- `Inter-Bold.woff2`
-3. The site will use those local fonts automatically. Serving fonts locally avoids external Google Fonts calls.
-
-Run a JavaScript linter (ESLint) locally:
-
-```bash
-# install eslint locally (no package.json change)
-npm install eslint --no-save
-# run eslint on the site script
-npx eslint script.js --max-warnings=0 || true
-```
-
-Files in the project:
-
-- index.html
-- styles.css
-- script.js
-- package.json
-- .gitignore
-- images/
-- fonts/ (create and add font files if self-hosting)
-
-Website summary: Announcement page for the Technological Risk Framework for Energy Companies.
-# Technological Risk Framework — Announcement Page
-
-Open `index.html` in your browser to view the announcement site.
-
-To serve it locally (recommended):
-
-```bash
-# from this folder
-python3 -m http.server 8000
-# then open http://localhost:8000
-```
-
-Files added:
-
-- index.html
-- styles.css
-- script.js
-# tech-risk-informational
-Website to announce the release Technological Risk Framework for Energy Companies 
+---
+Generated from the announcement content in `index.html`.
